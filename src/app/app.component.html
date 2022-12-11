@@ -1,0 +1,84 @@
+<form [formGroup]="createNewProfile"> 
+<div>
+  <h1>{{heading}}</h1>
+  <button (click)="changeTitle()">change title</button>
+  <h1>CREATE NEW ACCOUNT FROM HTML</h1>
+  <div>
+    <div>
+<label> NAME </label>
+<input type="text" formControlName="name" >
+{{name}}
+    </div>
+<div>
+  <label> AGE </label>
+  <input type="number" formControlName="age">
+  {{age}}
+</div>
+<div>
+  <label> SEX </label>
+  <input type="text" formControlName="sex">
+  {{sex}}
+</div>
+<div>
+  <label> Date of Birth </label>
+  <input type="date" formControlName="dateOfBirth">
+  {{dateOfBirth}}
+</div>
+</div>
+<div>
+<div>
+  <label> POSTAL CODE </label>
+  <input type="number" formControlName="postalCode">
+  {{postalCode}}
+</div>
+<div>
+  <label> CITY </label>
+  <input type="text" formControlName="city">
+  {{city}}
+</div>
+<div>
+  <label> DISTRICT </label>
+  <input type="text" formControlName="district">
+  <span>{{district}}</span>
+</div>
+<div>
+<label> STATE </label>
+<input type="text" formControlName="state">
+</div>
+</div>
+<div>
+  <div>
+    <label> COUNTRY </label>
+    <input type="text" formControlName="country">
+    {{country}}
+  </div>
+</div>
+<div>
+  <div>
+    <label> Email Id </label>
+    <input type="email"formControlName="emailId">
+    {{emailId}}
+  </div>
+  <div>
+    <label> USERNAME </label>
+    <input type="text"formControlName="username">
+    {{username}}
+  </div>
+  <div>
+    <label> Password </label>
+    <input type="text"formControlName="password">
+    {{password}}
+  </div>
+  <div>
+    <label> Clg Name </label>
+    <input type="text"formControlName="clgName">
+    {{clgName}}
+  </div>
+
+</div>
+<div>
+  <input type="submit" value="LOGIN" (click)="login()"> 
+  <button (click)="login()">send</button>
+</div>
+</div>
+</form>
