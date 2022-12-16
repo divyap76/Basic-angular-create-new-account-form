@@ -1,84 +1,100 @@
 <form [formGroup]="createNewProfile"> 
-<div>
+<div style="background-color:#00FFFF">
   <h1>{{heading}}</h1>
   <button (click)="changeTitle()">change title</button>
-  <h1>CREATE NEW ACCOUNT FROM HTML</h1>
+  <h1 style="text-color:">CREATE NEW ACCOUNT FROM HTML</h1>
   <div>
-    <div>
+    <div style="text-align:left">
 <label> NAME </label>
+<span style="margin-left:150px">
 <input type="text" formControlName="name" >
-{{name}}
+{{name}}</span>
     </div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> AGE </label>
+  <span style="margin-left:165px">
   <input type="number" formControlName="age">
-  {{age}}
+  {{age}}</span>
 </div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> SEX </label>
+  <span style="margin-left:168px">
   <input type="text" formControlName="sex">
-  {{sex}}
+  {{sex}}</span>
 </div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> Date of Birth </label>
+  <span style="margin-left:150px">
   <input type="date" formControlName="dateOfBirth">
-  {{dateOfBirth}}
+  {{dateOfBirth}}</span>
 </div>
 </div>
 <div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> POSTAL CODE </label>
+  <span style="margin-left:93px">
   <input type="number" formControlName="postalCode">
-  {{postalCode}}
+  {{postalCode}}</span>
 </div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> CITY </label>
+  <span style="margin-left:162px">
   <input type="text" formControlName="city">
-  {{city}}
+  {{city}}</span>
 </div>
-<div>
+<div style="padding-top:2%;text-align:left">
   <label> DISTRICT </label>
+  <span style="margin-left:127px">
   <input type="text" formControlName="district">
-  <span>{{district}}</span>
+  {{district}}</span>
 </div>
-<div>
+<div style="padding-top:2%;text-align:left"> 
 <label> STATE </label>
+<span style="margin-left:152px">
 <input type="text" formControlName="state">
+{{state}}</span>
 </div>
 </div>
 <div>
-  <div>
+  <div style="padding-top:2%;text-align:left">
     <label> COUNTRY </label>
+    <span style="margin-left:123px">
     <input type="text" formControlName="country">
-    {{country}}
+    {{country}}</span>
   </div>
 </div>
 <div>
-  <div>
+  <div style="padding-top:2%;text-align:left">
     <label> Email Id </label>
+    <span  style="margin-left:143px">
     <input type="email"formControlName="emailId">
-    {{emailId}}
+    {{emailId}}</span>
   </div>
-  <div>
+  <div style="padding-top:2%;text-align:left">
     <label> USERNAME </label>
+    <span  style="margin-left:112px">
     <input type="text"formControlName="username">
-    {{username}}
+    {{username}}</span>
   </div>
-  <div>
-    <label> Password </label>
+  <div style="padding-top:2%;text-align:left">
+    <label> PASSWORD </label>
+    <span  style="margin-left:115px">  
     <input type="text"formControlName="password">
-    {{password}}
+    {{password}}</span>
   </div>
-  <div>
+  <div style="padding-top:2%;text-align:left">
     <label> Clg Name </label>
+    <span  style="margin-left:123px">
     <input type="text"formControlName="clgName">
-    {{clgName}}
+    {{clgName}}</span>
   </div>
 
 </div>
-<div>
+<div style="padding-top:2%;text-align:center">
   <input type="submit" value="LOGIN" (click)="login()"> 
+  <span style="padding-top:2%;padding-left:15px">
   <button (click)="login()">send</button>
+  </span>
 </div>
 </div>
 </form>
