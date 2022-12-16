@@ -36,7 +36,7 @@ clgName:[""],
 login(){
   console.log("login clicked");
 console.log("form controls",  this.createNewProfile);
-this.createNewProfile.controls.name.setValue("Tamilarasu");
+this.createNewProfile.controls.name.setValue("");
 }
 
   changeTitle(){
